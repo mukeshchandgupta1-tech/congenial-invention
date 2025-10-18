@@ -1,0 +1,327 @@
+<script type="text/javascript">
+	atOptions = {
+		'key' : '6251d603d918febeed946cfe09ba5129',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/6251d603d918febeed946cfe09ba5129/invoke.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali & Laxmi Ji Blessings Share</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* --- General Theme & Structure --- */
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(to bottom, #ffe0b2, #ffcc80); /* Diwali Gold/Orange Gradient */
+            color: #4a2c00;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .container {
+            max-width: 750px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.98);
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            border: 6px double #ffd700;
+            position: relative;
+            z-index: 2; /* Content above fireworks */
+        }
+        
+        /* --- Headers and Text Formatting --- */
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3.2em;
+            color: #e65100;
+            text-shadow: 3px 3px 6px rgba(255, 215, 0, 0.6);
+            margin-bottom: 25px;
+        }
+        
+        /* Deepon ka Tyohar - Biggest Text */
+        #tyohar-message {
+            font-family: 'Fugaz One', cursive;
+            font-size: 3.5em;
+            color: #b71c1c;
+            text-shadow: 4px 4px 0px #ffeb3b;
+            margin-top: 15px;
+            line-height: 1.1;
+        }
+
+        /* Shubhkamnaye Message - Medium Text */
+        #shubh-message {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #4a2c00;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Dynamic Greeting Message (Below Photo) */
+        #greeting-message {
+            font-family: 'Merriweather', serif;
+            font-size: 1.6em;
+            color: #8d6e63;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        #sender-name {
+            color: #b71c1c;
+            font-weight: 700;
+        }
+
+        /* --- Image --- */
+        img {
+            max-width: 85%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 6px solid #ffeb3b;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Input Area --- */
+        .input-group {
+            margin-bottom: 30px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #8d6e63;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            padding: 14px;
+            width: 70%;
+            border: 2px solid #ffb300;
+            border-radius: 8px;
+            font-size: 1.1em;
+            background-color: #fff9c4;
+            color: #4a2c00;
+            text-align: center;
+        }
+
+        /* --- WhatsApp Share Button --- */
+        #whatsapp-share-button {
+            padding: 15px 30px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.4em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        #whatsapp-share-button i {
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+        #whatsapp-share-button:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+        }
+
+        /* --- Fireworks CSS (Intense and Continuous) --- */
+        .fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .firework {
+            position: absolute;
+            width: 8px; /* Slightly smaller base for more density */
+            height: 8px;
+            border-radius: 50%;
+            opacity: 0;
+            /* Use JavaScript to control the animation and position */
+        }
+        /* No specific CSS animation for continuous fireworks, JS controls the burst */
+    </style>
+</head>
+<body>
+
+    <div class="fireworks" id="fireworks-container"></div>
+
+    <div class="container">
+        <h1>मां लक्ष्मी जी का आशीर्वाद! 🙏</h1>
+        
+        <img id="laxmi-image" src="laxmi.gif" alt="Laxmi Ji Animation"> 
+        
+        <div id="greeting-message">
+            आप सभी को <span id="sender-name">Govind</span> की तरफ से दीपावली की हार्दिक शुभकामनाएँ!
+        </div>
+
+        <div id="tyohar-message">
+            दीपों का त्यौहार
+        </div>
+        
+        <div id="shubh-message">
+            आपको और आपके परिवार को दीपावली की शुभकामनाएँ
+        </div>
+        
+        <div class="input-group">
+            <label for="userName">आपका शुभ नाम यहाँ लिखो:</label>
+            <input type="text" id="userName" placeholder="आपका नाम लिखिए">
+        </div>
+        
+        <button id="whatsapp-share-button" onclick="shareLink()">
+            <i class="fab fa-whatsapp"></i> WhatsApp पर शेयर करें
+        </button>
+    </div>
+
+    <script>
+        let defaultSharerName = "Govind";
+        const maxActiveFireworks = 50; // Max number of firework particles to show at any time
+        
+        // Expanded color list for "Rang Birangi Patakhe"
+        const colors = [
+            '#FF4500', '#FFD700', '#00BFFF', '#ADFF2F', '#FF69B4', '#FFFFFF', 
+            '#9400D3', '#FFA07A', '#00FFFF', '#FF00FF', '#FF8C00', '#7CFC00', 
+            '#4169E1', '#F08080', '#32CD32' // Even more colors
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            let sharerName = urlParams.get('sharer');
+
+            if (sharerName) {
+                sharerName = decodeURIComponent(sharerName); 
+            } else {
+                sharerName = defaultSharerName;
+            }
+            
+            document.getElementById('sender-name').textContent = sharerName;
+
+            // Start continuous fireworks
+            startContinuousFireworks();
+        });
+
+        function startContinuousFireworks() {
+            // Launch a new set of fireworks every 500ms
+            setInterval(() => {
+                // Launch a burst of 5 to 10 fireworks
+                const burstCount = Math.floor(Math.random() * 6) + 5; 
+                createFireworkBurst(burstCount);
+            }, 500); 
+        }
+
+        function createFireworkBurst(num) {
+            const container = document.getElementById('fireworks-container');
+            
+            // Random launch position (center-top of the screen is common for fireworks)
+            const launchX = Math.random() * 80 + 10; 
+            const launchY = Math.random() * 30 + 10; 
+            
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+            for (let i = 0; i < num; i++) {
+                const firework = document.createElement('div');
+                firework.classList.add('firework');
+                firework.style.left = `${launchX}%`;
+                firework.style.top = `${launchY}%`;
+                firework.style.backgroundColor = randomColor;
+                firework.style.color = randomColor; 
+
+                // Custom animation properties for scattering
+                const angle = Math.random() * 2 * Math.PI; // Full circle
+                const distance = Math.random() * 50 + 20; // Spread distance
+                const endX = launchX + distance * Math.cos(angle) * (Math.random() > 0.5 ? 1 : -1) * 0.5;
+                const endY = launchY + distance * Math.sin(angle) * (Math.random() > 0.5 ? 1 : -1) * 0.5;
+
+                // Apply dynamic CSS animation
+                firework.style.transition = 'transform 1.5s ease-out, opacity 1.5s ease-out';
+                firework.style.transform = `translate(${endX - launchX}vw, ${endY - launchY}vh) scale(0)`;
+                firework.style.opacity = '0';
+                
+                // Add to container
+                container.appendChild(firework);
+                
+                // Trigger the animation after a slight delay to ensure CSS transitions are applied
+                setTimeout(() => {
+                    firework.style.transform = `translate(${endX - launchX}vw, ${endY - launchY}vh) scale(0)`;
+                    firework.style.opacity = '0';
+                }, 10);
+                
+                // Remove the element after its transition finishes
+                setTimeout(() => {
+                    firework.remove();
+                }, 1500);
+            }
+        }
+
+
+        function shareLink() {
+            const userNameInput = document.getElementById('userName');
+            const name = userNameInput.value.trim();
+            
+            if (name === "") {
+                alert("कृपया अपना शुभ नाम लिखिए!");
+                return;
+            }
+
+            // 1. Generate the Shareable Link (Uses the NEW name)
+            const baseURL = window.location.href.split('?')[0];
+            const shareableLink = baseURL + '?sharer=' + encodeURIComponent(name);
+            
+            // 2. Prepare the Message Text
+            const shareText = `आपको और आपके परिवार को Happy Diwali! यह मां लक्ष्मी जी का आशीर्वाद आपके लिए भेजा है। इसे देखने और आगे शेयर करने के लिए क्लिक करें: ${shareableLink}`;
+
+            // 3. Attempt to use the Web Share API
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Happy Diwali & Laxmi Ji Blessings',
+                    text: shareText,
+                    url: shareableLink 
+                }).then(() => {
+                    console.log('Successful share');
+                }).catch((error) => {
+                    console.log('Error sharing, falling back to WhatsApp:', error);
+                    // Fallback to WhatsApp
+                    window.location.href = 'whatsapp://send?text=' + encodeURIComponent(shareText);
+                });
+            } else {
+                // 4. Fallback for older browsers or desktop
+                alert("लिंक बन गया है। अब आपको WhatsApp पर साझा करने के लिए निर्देशित किया जा रहा है।");
+                window.location.href = 'whatsapp://send?text=' + encodeURIComponent(shareText);
+            }
+        }
+    </script>
+
+</body>
+</html>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '6251d603d918febeed946cfe09ba5129',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+
+<script type="text/javascript" src="//www.highperformanceformat.com/6251d603d918febeed946cfe09ba5129/invoke.js"></script>
